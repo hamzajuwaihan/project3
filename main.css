@@ -75,6 +75,7 @@
         border-radius: 5px;
 
       }
+
       .empolyeeName option{
         background-color: rgba(253, 253, 253, 0.5) ;
         
@@ -92,3 +93,30 @@
 .evaluationBtn:hover{
     background-color: aliceblue;
 }
+/* =======  jamel      */
+
+      /*register styling */
+      .grid-login {
+        display: grid;
+        grid-template-columns: 500px auto;
+        gap: 10px;
+    }
+    
+    .Register{
+        margin-top:0px ;
+        margin-left: 100px;
+        padding: 80px;
+        
+    }
+    .border-Register{
+        border: 2px solid black;
+        width: 460px;
+        padding: 30px;
+    }
+    
+    .input-style{
+        padding:5px 5px 5px ;
+        width: 400px;
+    }
+    
+/* >>>>>>> 8654869653b54ddd8cea135f1d747123a5acf0d5 */
