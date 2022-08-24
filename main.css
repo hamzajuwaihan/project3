@@ -1,8 +1,12 @@
-    .welcomePageBackground{
+    body {
+        margin: 0;
+    }
+
+    .welcomePageBackground {
         background-image: url(pages/images/back.JPG);
         background-size: cover;
         width: 100%;
-        height: 700px;
+        height: 750px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -10,48 +14,144 @@
         align-content: space-around;
         text-align: center;
     }
-    .containerWelcome h1{
+
+    .containerWelcome h1 {
         color: azure;
-      
+        font-family: 'Mulish', sans-serif;
+
     }
 
-    img.welcome{
+    img.welcome {
         width: 100%;
+        height: 300px;
     }
-    .employeeSelection{
+
+    .employeeSelection {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    .containerWelcome{
+
+    .containerWelcome {
         display: flex;
         justify-content: center;
         align-items: center;
+        align-content: space-around;
         flex-direction: column;
-        background-color: rgba(253, 253, 253, 0.4) ;
-        height: 700px;
+        background-color: rgba(253, 253, 253, 0.4);
+        height: 750px;
         transition: 2s;
+
     }
-    .containerWelcome:hover{
+
+    .containerWelcome:hover {
         scale: 1.03;
-       
-      }
-      .evaluationText{
+
+    }
+
+    .employeeSelection h2 {
+        font-family: 'DynaPuff', cursive;
+        text-align: center;
+
+
+
+    }
+
+    .evaluationText {
         font-size: medium;
         font-weight: bold;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         padding: 10px;
-      }
-
-      select.empolyeeName{
-        width:40%;
-        height: 30px;
-        text-align: center;
+        font-family: 'Changa', sans-serif;
         background-color:
-        #e99452;
+            rgba(194, 149, 156, 0.4);
+
+    }
+
+    select.empolyeeName {
+        width: 40%;
+        height: 40px;
+        text-align: center;
+        background-color: #e99452;
+        font-size: medium;
+        font-weight: bold;
+        font-family: 'DynaPuff', cursive;
+        border: none;
+        border-radius: 5px;
         color: white;
+    }
 
-      }
+    .empolyeeName option {
+        background-color: rgba(253, 253, 253, 0.5);
 
-      
+    }
+
+    .evaluationBtn {
+        background-color: #94b5c4;
+        font-size: medium;
+        font-weight: bold;
+        font-family: 'DynaPuff', cursive;
+        border: none;
+        border-radius: 10px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .evaluationBtn:hover {
+        background-color: aliceblue;
+    }
+
+    .employeeFormEval {
+        background-color: #768dab;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        color: aliceblue;
+    }
+
+    .radioBox {
+        border: 1px solid rgb(250, 246, 246);
+        width: 450px;
+
+        border-radius: 5px;
+        margin: 20px;
+        padding: 10px;
+
+    }
+
+    input {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    /* =======  jamel   ============   */
+
+    /*register styling */
+    .grid-login {
+        display: grid;
+        grid-template-columns: 500px auto;
+        gap: 10px;
+    }
+
+    .Register {
+        margin-top: 0px;
+        margin-left: 100px;
+        padding: 80px;
+
+    }
+
+    .border-Register {
+        border: 2px solid black;
+        width: 460px;
+        padding: 30px;
+    }
+
+    .input-style {
+        padding: 5px 5px 5px;
+        width: 400px;
+    }
+
