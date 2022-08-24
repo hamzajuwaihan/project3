@@ -93,7 +93,71 @@
 .evaluationBtn:hover{
     background-color: aliceblue;
 }
-/* =======  jamel      */
+
+.employeeFormEval{
+  background-color: #768dab;
+
+display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        color: aliceblue;
+}
+.radioBox{
+  border: 1px solid rgb(250, 246, 246);
+  width: 450px;
+  
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+ 
+}
+input{
+  width: 20px;
+  height: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======  jamel   ============   */
 
       /*register styling */
       .grid-login {
