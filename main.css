@@ -88,6 +88,7 @@
         border: none;
         border-radius: 5px;
         color: white;
+        cursor: pointer;
     }
 
     .empolyeeName option {
@@ -124,6 +125,7 @@
         color: black;
        
     }
+    
 
     .radioBox {
         border: 1px solid rgb(250, 246, 246);
@@ -191,6 +193,12 @@
     .submitEvaluationForm:hover {
         background-color: aliceblue;
     }
+    input[type="radio"] {
+        accent-color: #81ff81;
+    }
+
+
+  
   
 
     /* =======  jamel   ============   */
