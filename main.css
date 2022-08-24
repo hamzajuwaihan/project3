@@ -51,3 +51,28 @@
         #e99452;
 
       }
+
+      /*register styling */
+      .grid-login {
+        display: grid;
+        grid-template-columns: 500px auto;
+        gap: 10px;
+    }
+    
+    .Register{
+        margin-top:0px ;
+        margin-left: 100px;
+        padding: 80px;
+        
+    }
+    .border-Register{
+        border: 2px solid black;
+        width: 460px;
+        padding: 30px;
+    }
+    
+    .input-style{
+        padding:5px 5px 5px ;
+        width: 400px;
+    }
+    
