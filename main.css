@@ -106,7 +106,9 @@
         background-color: #768dab;
 
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         align-items: center;
         font-size: larger;
         color: aliceblue;
