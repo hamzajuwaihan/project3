@@ -30,12 +30,12 @@
     <section class="welcomePageBackground2">
       <div class="containerWelcome">
       <h2 >Please select an employee to show the evaluation result</h2>
-      <select name="" id="" class="empolyeeName">
-        <option value="">employee name</option>
-        <option value="">employee name</option>
-        <option value="">employee name</option>
-        <option value="">employee name</option>
-        <option value="">employee name</option>
+      <select name="" id="employeeNameSelect" class="empolyeeName">
+        <option value="the employee" >employee name</option>
+        <option value="Hamza">Hamza</option>
+        <option value="Majd">Majd</option>
+        <option value="Jameel">Jameel</option>
+        <option value="Rahaf">Rahaf</option>
       </select>
       <img class="welcome2"  src="images/reportphoto.png">
 
@@ -53,7 +53,7 @@
           <div class="personal-section">
             <h3 class="criteriaHeader">personal Critieria</h3>
             <ol>
-              <li>The employee personality and charisma is truly magnetic.</li>
+              <li id="q-0">The employee personality and charisma is truly magnetic.</li>
               <div class="radioBox">
                 <input class="radioStyle" type="radio" name="personal-first" id="" />
                 <label for="">excellent</label>
@@ -67,7 +67,7 @@
                 <label for="">poor</label>
               </div> -->
   
-              <li>The employee is a person of charisma and influence.</li>
+              <li id="q-1">The employee is a person of charisma and influence.</li>
               <div class="radioBox">
                 <input type="radio" name="personal-second" id="" />
                 <label for="">excellent</label>
@@ -80,7 +80,7 @@
                 <input type="radio" name="personal-second" id="" />
                 <label for="">poor</label>
               </div> -->
-              <li>
+              <li id="q-2">
                 The employee is a very soft spoken person and never lose his
                 temper.
               </li>
@@ -104,7 +104,7 @@
           <div class="professionalSection">
             <h3 class="criteriaHeader">professional Critieria</h3>
             <ol>
-              <li>The employee’s dress and personal appearance</li>
+              <li id="q-3">The employee’s dress and personal appearance</li>
               <div class="radioBox">
                 <input type="radio" name="professional-first" id="" />
                 <label for="">excellent</label>
@@ -118,7 +118,7 @@
                 <label for="">poor</label>
               </div> -->
   
-              <li>the employee is accountable for her tasks</li>
+              <li id="q-4">the employee is accountable for her tasks</li>
               <div class="radioBox">
                 <input type="radio" name="professional-second" id="" />
                 <label for="">excellent</label>
@@ -131,8 +131,8 @@
                 <input type="radio" name="professional-second" id="" />
                 <label for="">poor</label>
               </div> -->
-              <li>
-                The employee’s behavior according to the company’s ethical code
+              <li id="q-5">
+                The employee’s behavior according to the company’s ethical code.
               </li>
               <div class="radioBox">
                 <input type="radio" name="professional-third" id="" />
@@ -153,7 +153,7 @@
           <div class="technicalSection">
             <h3 class="criteriaHeader">technical Critieria</h3>
             <ol>
-              <li>
+              <li id="q-6">
                 the employee demonstrated the highest level of understanding of
                 the most complex design and implementation issues at every stage
                 of development.
@@ -171,7 +171,7 @@
                 <label for="">poor</label>
               </div> -->
   
-              <li>
+              <li id="q-7">
                 the employee has an exceptional way of finding things and get them
                 improved.
               </li>
@@ -187,7 +187,7 @@
                 <input type="radio" name="professional-second" id="" />
                 <label for="">poor</label>
               </div> -->
-              <li>
+              <li id="q-8">
                 the employee understands complicated issues, even when outside of
                 his direct area of expertise.
               </li>
@@ -219,5 +219,26 @@
         </div>
     </section>
     <footer>CopyRight 3Val</footer>
+    <script>
+      const selection=document.getElementById("employeeNameSelect")
+      selection.addEventListener('change', (event) => {
+  
+  document.getElementById("q-0").textContent =`${event.target.value} personality and charisma is truly magnetic.`;
+  document.getElementById("q-1").textContent =`${event.target.value} is a person of charisma and influence.`;
+  document.getElementById("q-2").textContent =`${event.target.value} is a very soft spoken person and never lose his temper.`;
+  document.getElementById("q-3").textContent =`${event.target.value} dress and personal appearance.`;
+  document.getElementById("q-4").textContent =`${event.target.value} is accountable for her tasks.`;
+  document.getElementById("q-5").textContent =`${event.target.value} behavior according to the company’s ethical code.`;
+  document.getElementById("q-6").textContent =`${event.target.value}  the employee demonstrated the highest level of understanding of
+          the most complex design and implementation issues at every stage
+          of development.`;
+  document.getElementById("q-7").textContent =`${event.target.value} has an exceptional way of finding things and get them
+          improved.`;
+  document.getElementById("q-8").textContent =`${event.target.value} understands complicated issues, even when outside of
+          his direct area of expertise.`;
+
+});
+
+    </script>
   </body>
 </html>
