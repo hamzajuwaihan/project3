@@ -4,6 +4,38 @@
     #fir {
         margin-top: 0;
     }
+
+      .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        height: 50px;
+      }
+      
+      .navbar li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        font-size: large;
+        font-weight: 600;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: #111;
+      }
+
+
+
+
+
     .welcomePageBackground {
         background-image: url(pages/images/back.JPG);
         background-size: cover;
@@ -254,8 +286,6 @@
         accent-color: #81ff81;
     }
 
-
-  
   /* report page */
 
   .welcomePageBackground2 {
@@ -309,6 +339,14 @@ img.welcome2 {
 }
 
 
+.recommendArea{
+    width: 40%;
+    height: 200px;
+    border: 1px solid black;
+   margin: auto;
+}
+
+
 
 
     /* =======  jamel   ============   */
@@ -345,4 +383,80 @@ img.welcome2 {
     footer {
         padding: 50px;
         text-align: center;
+    }
+
+
+
+
+    @media screen and (max-width: 550px) {
+
+/*   ........................... evaluation page & report page  */
+
+    .welcomePageBackground {
+        width: 100%;
+        height: 1000px;
+    }
+
+    .containerWelcome {
+        height: 1000px;
+        width: 90%;
+    }
+    select.empolyeeName {
+        width: 60%;
+    }
+
+    .button-55 {
+        width: 70%;
+    }
+    .employeeFormEval {
+       
+        justify-content: start;
+        align-items: flex-start;
+        font-size: large;
+
+    }
+
+    .personal-section{
+        width: 300px;
+     }
+     .professionalSection{
+         width: 300px;
+     }
+     .technicalSection{
+         width: 300px;
+     }
+     input.submitEvaluationForm2{
+        width: 60%;
+        margin: 5% 65%;
+    }
+
+
+    
+    }
+    @media screen and (min-width:551px) and (max-width: 920px) {
+        .welcomePageBackground {
+   
+            height: 900px;
+        }
+
+        .containerWelcome {
+            height: 900px;
+            width: 70%;
+        }
+        .personal-section{
+            width: 360px;
+         }
+         .professionalSection{
+             width: 360px;
+         }
+         .technicalSection{
+             width: 360px;
+         }
+         input.submitEvaluationForm2{
+            width: 40%;
+            margin: 5% 0%;
+        }
+
+
+
     }
