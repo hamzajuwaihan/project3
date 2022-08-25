@@ -33,12 +33,12 @@
         sections to evaluate your employee <br>(personal, professional, technical)
         and then we will <br>recommend you advices based on your answers.
       </p>
-      <select name="" id="" class="empolyeeName">
-        <option value="">employee name</option>
-        <option value="">employee name</option>
-        <option value="">employee name</option>
-        <option value="">employee name</option>
-        <option value="">employee name</option>
+      <select name="" id="employeeNameSelect" class="empolyeeName">
+        <option value="the employee" >employee name</option>
+        <option value="Hamza">Hamza</option>
+        <option value="Majd">Majd</option>
+        <option value="Jameel">Jameel</option>
+        <option value="Rahaf">Rahaf</option>
       </select>
   
       <!-- <button>start the evaluation</button> -->
@@ -54,7 +54,7 @@
     <div class="personal-section">
       <h3 class="criteriaHeader">personal Critieria <img id="showMore" onclick="showOne()" src="images/showmore.png" > </h3>
       <ol  id="p1_text">
-        <li>The employee personality and charisma is truly magnetic.</li>
+        <li id="q-0">The employee personality and charisma is truly magnetic.</li>
         <div class="radioBox">
           <input class="radioStyle" type="radio" name="personal-first" id="p-f-e" />
           <label for="p-f-e">excellent</label>
@@ -68,7 +68,7 @@
           <label for="p-f-p">poor</label>
         </div>
 
-        <li>The employee is a person of charisma and influence.</li>
+        <li id="q-1">The employee is a person of charisma and influence.</li>
         <div class="radioBox">
           <input type="radio" name="personal-second" id="p-s-e" />
           <label for="p-s-e">excellent</label>
@@ -81,7 +81,7 @@
           <input type="radio" name="personal-second" id="p-s-p" />
           <label for="p-s-p">poor</label>
         </div>
-        <li>
+        <li id="q-2">
           The employee is a very soft spoken person and never lose his
           temper.
         </li>
@@ -105,7 +105,7 @@
     <div class="professionalSection">
       <h3 class="criteriaHeader">professional Critieria <img id="showMore" onclick="showTwo()" src="images/showmore.png" ></h3>
       <ol id="p2_text">
-        <li>The employee’s dress and personal appearance</li>
+        <li id="q-3">The employee’s dress and personal appearance</li>
         <div class="radioBox">
           <input type="radio" name="professional-first" id="pro-f-e" />
           <label for="pro-f-e">excellent</label>
@@ -119,7 +119,7 @@
           <label for="pro-f-p">poor</label>
         </div>
 
-        <li>the employee is accountable for her tasks</li>
+        <li id="q-4">the employee is accountable for her tasks</li>
         <div class="radioBox">
           <input type="radio" name="professional-second" id="pro-s-e" />
           <label for="pro-s-e">excellent</label>
@@ -132,8 +132,8 @@
           <input type="radio" name="professional-second" id="pro-s-p" />
           <label for="pro-s-p">poor</label>
         </div>
-        <li>
-          The employee’s behavior according to the company’s ethical code
+        <li id="q-5">
+          The employee’s behavior according to the company’s ethical code.
         </li>
         <div class="radioBox">
           <input type="radio" name="professional-third" id="pro-t-e" />
@@ -154,7 +154,7 @@
     <div class="technicalSection">
       <h3 class="criteriaHeader">technical Critieria<img id="showMore" onclick="showThree()" src="images/showmore.png"  ></h3>
       <ol id="p3_text">
-        <li>
+        <li id="q-6">
           the employee demonstrated the highest level of understanding of
           the most complex design and implementation issues at every stage
           of development.
@@ -172,7 +172,7 @@
           <label for="t-f-p">poor</label>
         </div>
 
-        <li>
+        <li id="q-7">
           the employee has an exceptional way of finding things and get them
           improved.
         </li>
@@ -188,7 +188,7 @@
           <input type="radio" name="technical-second" id="t-s-p" />
           <label for="t-s-p">poor</label>
         </div>
-        <li>
+        <li id="q-8">
           the employee understands complicated issues, even when outside of
           his direct area of expertise.
         </li>
@@ -223,7 +223,7 @@
       const p1Text = document.getElementById("p1_text");
       const p2Text = document.getElementById("p2_text");
       const p3Text = document.getElementById("p3_text");
-    
+      const selection =  document.getElementById("employeeNameSelect");
      
 
 
@@ -241,9 +241,27 @@ function showThree(){
 
 
 
+selection.addEventListener('change', (event) => {
+  
+  document.getElementById("q-0").textContent =`${event.target.value} personality and charisma is truly magnetic.`;
+  document.getElementById("q-1").textContent =`${event.target.value} is a person of charisma and influence.`;
+  document.getElementById("q-2").textContent =`${event.target.value} is a very soft spoken person and never lose his temper.`;
+  document.getElementById("q-3").textContent =`${event.target.value} dress and personal appearance.`;
+  document.getElementById("q-4").textContent =`${event.target.value} is accountable for her tasks.`;
+  document.getElementById("q-5").textContent =`${event.target.value} behavior according to the company’s ethical code.`;
+  document.getElementById("q-6").textContent =`${event.target.value}  the employee demonstrated the highest level of understanding of
+          the most complex design and implementation issues at every stage
+          of development.`;
+  document.getElementById("q-7").textContent =`${event.target.value} has an exceptional way of finding things and get them
+          improved.`;
+  document.getElementById("q-8").textContent =`${event.target.value} understands complicated issues, even when outside of
+          his direct area of expertise.`;
+
+});
+
 
   </script>
-
+  <script src="../script.js"></script>
 
 
   </body>
