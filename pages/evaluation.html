@@ -50,10 +50,10 @@
 
 <section class="employeeFormEval" id="fir">
   <h2>Employee Evaluation Results</h2>
-  <form action="" >
+  <form action="" class="evaluationForm" >
     <div class="personal-section">
-      <h3 class="criteriaHeader">personal Critieria</h3>
-      <ol>
+      <h3 class="criteriaHeader">personal Critieria <img id="showMore" onclick="showOne()" src="images/showmore.png" > </h3>
+      <ol  id="p1_text">
         <li>The employee personality and charisma is truly magnetic.</li>
         <div class="radioBox">
           <input class="radioStyle" type="radio" name="personal-first" id="p-f-e" />
@@ -97,13 +97,14 @@
           <input type="radio" name="personal-third" id="p-t-p" />
           <label for="p-t-p">poor</label>
         </div>
+    
       </ol>
-      <hr>
+    
     </div>
     
     <div class="professionalSection">
-      <h3 class="criteriaHeader">professional Critieria</h3>
-      <ol>
+      <h3 class="criteriaHeader">professional Critieria <img id="showMore" onclick="showTwo()" src="images/showmore.png" ></h3>
+      <ol id="p2_text">
         <li>The employee’s dress and personal appearance</li>
         <div class="radioBox">
           <input type="radio" name="professional-first" id="pro-f-e" />
@@ -147,12 +148,12 @@
           <label for="pro-t-p">poor</label>
         </div>
       </ol>
-      <hr> 
+ 
     </div>
    
     <div class="technicalSection">
-      <h3 class="criteriaHeader">technical Critieria</h3>
-      <ol>
+      <h3 class="criteriaHeader">technical Critieria<img id="showMore" onclick="showThree()" src="images/showmore.png"  ></h3>
+      <ol id="p3_text">
         <li>
           the employee demonstrated the highest level of understanding of
           the most complex design and implementation issues at every stage
@@ -215,6 +216,36 @@
 </section>
 
     <footer>CopyRight &copy; 3Val</footer>
+
+
+    <script>
+      /* TODO this is for you to complete */
+      const p1Text = document.getElementById("p1_text");
+      const p2Text = document.getElementById("p2_text");
+      const p3Text = document.getElementById("p3_text");
+    
+     
+
+
+function showOne(){
+  p1Text.style.display='block';
+}
+
+function showTwo(){
+  p2Text.style.display='block';
+}
+
+function showThree(){
+  p3Text.style.display='block';
+}
+
+
+
+
+  </script>
+
+
+
   </body>
 </html>
 
