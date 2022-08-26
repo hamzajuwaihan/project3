@@ -2,11 +2,7 @@
         margin: 0;
     }
 
-    #fir {
-        margin-top: 0;
-    }
-
-
+ 
 
     /* CSS */
     .button-17 {
@@ -77,7 +73,8 @@
     .button-17:disabled {
         box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
     }
-  /* navbar style*/
+
+/*.........navbar style......*/
     .navbar {
         list-style-type: none;
         margin: 0;
@@ -89,8 +86,19 @@
         justify-content: space-between;
         align-items: center;
     }
+    .rightSideNav{
+        display: flex;
+        flex-direction: row;
+    }
+    .style3val{
+        font-size: xx-large;
+        font-family: 'Michroma', sans-serif;
+        font-weight: 700;
+     
 
-
+    }
+    
+    
     li a {
         display: block;
         color: white;
@@ -100,39 +108,63 @@
         padding: 5px;
         text-decoration: none;
     }
-
+    
     li a:hover {
         background-color: #111;
     }
-
-
-
-
+/*....... evaluation page........ */
 
     .welcomePageBackground {
         background-image: url(pages/images/back.JPG);
         background-size: cover;
         width: 100%;
-        height: 780px;
+        height: 800px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         align-content: space-around;
         text-align: center;
+    }
+    .containerWelcome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        flex-direction: column;
+        background-color: rgba(253, 253, 253, 0.4);
+        height: 780px;
+        transition: 2s;
+        width: 45%;
 
     }
+      .containerWelcome:hover {
+        scale: 1.03;
 
+    }
     .containerWelcome h1 {
-        color: white;
-        font-family: 'Mulish', sans-serif;
+        color: rgb(0, 0, 0);
+        font-family: 'Cairo', sans-serif;
         font-size: xx-large;
-
     }
 
     img.welcome {
         width: 120%;
         height: 310px;
+    }
+
+
+
+    .evaluationText {
+        font-size: medium;
+        font-weight: 400;
+        font-size: large;
+        padding: 20px;
+        width: 90%;
+        font-family: 'Courgette', cursive;
+        background-color:
+            rgba(194, 149, 156, 0.4);
+
     }
 
     .employeeSelection {
@@ -142,24 +174,6 @@
         flex-direction: column;
     }
 
-    .containerWelcome {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: space-around;
-        flex-direction: column;
-        background-color: rgba(253, 253, 253, 0.4);
-        height: 760px;
-        transition: 2s;
-        width: 45%;
-
-
-    }
-
-    .containerWelcome:hover {
-        scale: 1.03;
-
-    }
 
     .employeeSelection h2 {
         font-family: 'DynaPuff', cursive;
@@ -167,20 +181,7 @@
 
 
     }
-
-    .evaluationText {
-        font-size: medium;
-        font-weight: bold;
-        font-size: large;
-        /* border: 1px solid black; */
-        padding: 20px;
-        width: 90%;
-        font-family: 'Changa', sans-serif;
-        background-color:
-            rgba(194, 149, 156, 0.4);
-
-    }
-
+  
     ol {
         padding: 20px;
     }
@@ -200,57 +201,14 @@
     }
 
     .empolyeeName option {
-        background-color: rgba(253, 253, 253, 0.5);
+        background-color: rgba(253, 253, 253, 0.2);
 
     }
-  
+  /*.......buttons..........*/
 
-    .evaluationBtn {
-        background-color: #94b5c4;
+    .button-55 {     
         font-size: medium;
         font-weight: bold;
-        font-family: 'DynaPuff', cursive;
-        border: none;
-        border-radius: 10px;
-        height: 40px;
-        cursor: pointer;
-        width: 40%;
-    }
-
-    .evaluationBtn:hover {
-        background-color: aliceblue;
-    }
-
-    .employeeFormEval {
-        margin-top: 1%;
-        /* background-color: #e5dbd9; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-items: center;
-        font-size: larger;
-
-        color: black;
-
-    }
-
-
-    .radioBox {
-        border: 1px solid rgb(0, 0, 0);
-        width: 50%;
-        text-transform: capitalize;
-        margin-bottom: 20px;
-        border-radius: 5px;
-
-        padding: 6px;
-
-    }
-
-
-
-    /* CSS */
-    .button-55 {
         align-self: center;
         background-color: #fff;
         background-image: none;
@@ -293,39 +251,57 @@
     }
 
 
-    .employeeFormEval li {
-        font-size: larger;
-        margin-bottom: 20px;
 
+
+    .employeeFormEval {
+        margin-top: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        font-size: larger;
+        color: black;
 
     }
 
-    /* .employeeFormEval h3 {
-        font-size: xx-large;
+
+    .radioBox {
+        border: 1px solid rgb(0, 0, 0);
+        width: 50%;
         text-transform: capitalize;
-        color: black;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        padding: 6px;
 
-    } */
-
-
+    }
+  
+   .employeeFormEval li {
+        font-size: larger;
+        margin-bottom: 20px;
+    }
 
    .center {
         text-align: center;
     } 
 
-    /* .employeeFormEval h3 {
+    .employeeFormEval .criteriaHeader {
         font-size: xx-large;
+        display: flex;
         text-transform: capitalize;
-        color: #f64aaedc;
-        text-decoration: overline;
-        text-decoration: underline;
+        color: white;
+        background-color: #c2909b;
+       padding:20px;
+       display: flex;
+       justify-content: space-between;
+       font-family: 'Lobster', cursive;
+       font-weight: 300;
 
-
-    } */
-
+    }
     .employeeFormEval h2 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+
 /* .......hide evaluation....... */
    
   #p1_text{
@@ -341,19 +317,20 @@
   .criteriaHeader img{
     height: 40px;
      width:50px;
-     
-
+     cursor: pointer;
     
   }
+  .criteriaHeader img:hover{
+   background-color: rgb(255, 254, 254);
+  }
+
+
  .personal-section {
         background-color: rgba(194, 149, 156, 0.2);
         padding: 20px;
         border: #111 2px solid;
         margin-bottom: 1%;
       
-        
-       
-
     }
 
     .professionalSection {
@@ -369,6 +346,7 @@
         border: #111 2px solid;
     }
 
+
     input.submitEvaluationForm {
         background-color: #e3f888;
         font-size: medium;
@@ -379,7 +357,6 @@
         height: 40px;
         width: 50%;
         cursor: pointer;
-
         margin: 5% 25%;
     }
 
@@ -391,18 +368,20 @@
         accent-color: #81ff81;
     }
 
-    
    .evaluationForm{
     width: 50%;
    }
 
-    /* report page */
+
+
+
+    /* .............report page............ */
 
     .welcomePageBackground2 {
         background-image: url(pages/images/Purple\ Creative\ Linktree\ Background.png);
         background-size: cover;
         width: 100%;
-        height: 780px;
+        height: 700px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -410,30 +389,32 @@
         align-content: space-around;
         text-align: center;
     }
+    .containerWelcome2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        flex-direction: column;
+        background-color: rgba(253, 253, 253, 0.4);
+        height: 650px;
+        transition: 2s;
+        width: 45%;
 
+    }
+      .containerWelcome2:hover {
+        scale: 1.03;
 
-
+    }
+    .containerWelcome2 h1 {
+        color: rgb(0, 0, 0);
+        font-family: 'Cairo', sans-serif;
+        font-size: xx-large;
+    }
 
     img.welcome2 {
         width: 80%;
         height: 350px;
         margin-top: 15%;
-    }
-/*..........................................................*/
-    .employeeFormEval .criteriaHeader {
-
-        font-size: xx-large;
-        display: flex;
-        text-transform: capitalize;
-        color: white;
-        text-decoration: overline;
-        text-decoration: underline;
-        background-color: #c2909b;
-       padding:20px;
-       display: flex;
-       justify-content: space-between;
-
-
     }
 
     input.submitEvaluationForm2 {
@@ -446,7 +427,6 @@
         height: 50px;
         width: 40%;
         cursor: pointer;
-
         margin: 5% 25%;
     }
 
@@ -454,54 +434,41 @@
         background-color: aliceblue;
     }
 
-
     .recommendArea {
         width: 40%;
         height: 200px;
-        border: 1px solid black;
         margin: auto;
+        background-color: #dfe9fa;
+        width: 80%;
+        border: none;
+        margin-bottom: 1%;
+        color: #111;
+        font-family: 'DynaPuff', cursive;
     }
+ 
 
-
-
-
-
-
-
-
-
-
-
-    /* =======  jamel   ============   */
-
-    /* register styling */
-    .grid-login {
-        display: grid;
-        grid-template-columns: 500px auto;
-        gap: 10px;
-    }
-
-    .Register {
-        margin-top: 0px;
-        margin-left: 100px;
-        padding: 80px;
-
-    }
-
-    .border-Register {
-        border: 2px solid black;
-        width: 460px;
-        padding: 30px;
-    }
-
-    .input-style {
-        padding: 5px 5px 5px;
-        width: 400px;
-    }
-
-    form {
+    .containerRecomend{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border: 3px black solid;
+         margin-bottom: 5%;
+        margin-top: 5%;
+        margin-left:25%;
         width: 50%;
+        font-family: 'DynaPuff', cursive;
+    }
 
+    .recImgAndText{
+        display: flex;
+      
+    }
+    .recImgAndText img{
+        width: 80px;
+        height: 70px;
+        margin-left: 3%;
     }
 
     footer {
@@ -509,14 +476,7 @@
         text-align: center;
         background-color: #111;
         color: wheat;
-    } 
-
-
-
-
-
-
-
+    }
 
 
     @media screen and (max-width: 550px) {
@@ -529,7 +489,11 @@
         }
 
         .containerWelcome {
-            height: 1000px;
+            height: 960px;
+            width: 90%;
+        }
+        .containerWelcome2 {
+            height: 600px;
             width: 90%;
         }
 
@@ -565,7 +529,19 @@
             width: 60%;
             margin: 5% 65%;
         }
-
+        .containerRecomend{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            border: 3px black solid;
+             margin-bottom: 5%;
+            margin-top: 5%;
+            margin-left:0%;
+            width:95%;
+            font-family: 'DynaPuff', cursive;
+        }
 
 
     }
@@ -577,7 +553,7 @@
         }
 
         .containerWelcome {
-            height: 900px;
+            height: 880px;
             width: 70%;
         }
 
@@ -601,5 +577,140 @@
 
 
     }
+
+
+         /*register styling */
+         .sign-up {
+            background-color: black;
+            font-weight: bold;
+            
+        }
+        .h1{
+            text-align:center;
+        }
+        .nav-link{
+            font-weight: bold !important;
+            color: black !important;
+        }
+        .nav-link:hover {
+            color: #ff7900 !important;
+            
+        }
+        .hide {
+            width: 20px;
+            height: 20px;
+        }
+        #carouselExampleSlidesOnly {
+            width: 100%;
+        }
+        
+        .star {
+            color: red;
+        }
+        small{
+            font-weight: bold;
+            color: rgb(255, 116, 116);
+        }
+        .border-Register{
+            border: 1px solid black;
+            width: 100%;
+            padding: 30px;
+            background-color:#cfacb2;
+            border-radius: 20px;
+           
+            box-shadow: 3px 3px 3px 3px rgba(192, 192, 192, 0.589);
+        }
+        .border-Register2{
+            border: 1px solid black;
+            
+            padding: 30px;
+            background-color:#cfacb2;
+            border-radius: 20px;
+            box-shadow: 3px 3px 3px 3px rgba(192, 192, 192, 0.589);
+            
+        }
+        .error{
+            color:red;
+        }
+        .Copyringht-3val{
+            background-color: #333;
+            text-align: center;
+            height: 50px;
+            color: white;
+            
+        }
+        /* CSS */
+        .button-17 {
+            align-items: center;
+            appearance: none;
+            background-color: #fff;
+            border-radius: 24px;
+            border-style: none;
+            box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+            box-sizing: border-box;
+            color: #3c4043;
+            cursor: pointer;
+            display: inline-flex;
+            fill: currentcolor;
+            font-family: "Google Sans", Roboto, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            height: 48px;
+            justify-content: center;
+            letter-spacing: .25px;
+            line-height: normal;
+            max-width: 100%;
+            overflow: visible;
+            padding: 2px 24px;
+            position: relative;
+            text-align: center;
+            text-transform: none;
+            transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: auto;
+            will-change: transform, opacity;
+            z-index: 0;
+        }
+        
+        .button-17:hover {
+            background: #F6F9FE;
+            color: #174ea6;
+        }
+        
+        .button-17:active {
+            box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+            outline: none;
+        }
+        
+        .button-17:focus {
+            outline: none;
+            border: 2px solid #4285f4;
+        }
+        
+        .button-17:not(:disabled) {
+            box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+        }
+        
+        .button-17:not(:disabled):hover {
+            box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+        }
+        
+        .button-17:not(:disabled):focus {
+            box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+        }
+        
+        .button-17:not(:disabled):active {
+            box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+        }
+        
+        .button-17:disabled {
+            box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+        }
+             .register-section{
+        margin: 0 auto;
+    
+       } 
 
     

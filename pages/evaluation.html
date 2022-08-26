@@ -5,21 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Employee evaluation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="stylesheet" href="../main.css" />
   </head>
   <body>
     <header>
       <nav>
         <ul class="navbar">
-          <li ><a class="active" href="#home">3VAL</a></li>
-          <!-- <li><a href="#news">Logout</a></li>
-           <li><a href="#contact">Contact</a></li> -->
-         <li style="float:right"><a href="#about"><button class="button-17" role="button">Logout</button></a></li> 
+            <li><a class="active" href="#home"><span class="style3val"> 3VAL</span></a></li>
+            <div class="rightSideNav">
+            <li ><a href="report.html"><button class="button-17" role="button">Evaluation Results</button></a>
+            </li>
+            <li  ><a href="register.html"><button class="button-17" role="button">Home</button></a>
+            </li>
+        </div>
         </ul>
 
 
 
-      </nav>
+    </nav>
     </header>
 <section class="welcomePageBackground">
     <div class="containerWelcome">
@@ -34,14 +39,13 @@
         and then we will <br>recommend you advices based on your answers.
       </p>
       <select name="" id="employeeNameSelect" class="empolyeeName">
-        <option value="the employee" >employee name</option>
+        <option value="the employee" >Employee Name</option>
         <option value="Hamza">Hamza</option>
         <option value="Majd">Majd</option>
         <option value="Jameel">Jameel</option>
         <option value="Rahaf">Rahaf</option>
       </select>
-  
-      <!-- <button>start the evaluation</button> -->
+
       <img class="welcome"  src="images/welome.png">
       <button class="evaluationBtn button-55">start the evaluation</button>
 </div>
@@ -49,10 +53,10 @@
 </section>
 
 <section class="employeeFormEval" id="fir">
-  <h2>Employee Evaluation Results</h2>
+  <h2>Employee Evaluation </h2>
   <form action="" class="evaluationForm" >
     <div class="personal-section">
-      <h3 class="criteriaHeader">personal Critieria <img id="showMore" onclick="showOne()" src="images/showmore.png" > </h3>
+      <h3 class="criteriaHeader">personal Criteria  <img id="showMore" onclick="showOne()" src="images/showmore.png" > </h3>
       <ol  id="p1_text">
         <li id="q-0">The employee personality and charisma is truly magnetic.</li>
         <div class="radioBox">
@@ -103,7 +107,7 @@
     </div>
     
     <div class="professionalSection">
-      <h3 class="criteriaHeader">professional Critieria <img id="showMore" onclick="showTwo()" src="images/showmore.png" ></h3>
+      <h3 class="criteriaHeader">professional Criteria  <img id="showMore" onclick="showTwo()" src="images/showmore.png" ></h3>
       <ol id="p2_text">
         <li id="q-3">The employee’s dress and personal appearance</li>
         <div class="radioBox">
@@ -152,7 +156,7 @@
     </div>
    
     <div class="technicalSection">
-      <h3 class="criteriaHeader">technical Critieria<img id="showMore" onclick="showThree()" src="images/showmore.png"  ></h3>
+      <h3 class="criteriaHeader">technical Criteria <img id="showMore" onclick="showThree()" src="images/showmore.png"  ></h3>
       <ol id="p3_text">
         <li id="q-6">
           the employee demonstrated the highest level of understanding of
