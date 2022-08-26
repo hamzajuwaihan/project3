@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet" />
+<title>sign in</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../register&sign in.css" />
+</head>
+
+<body>
+
+    <div>
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a class="active" href="#home">3VAL</a></li>
+                    <!-- <li><a href="#news">Logout</a></li>
+             <li><a href="#contact">Contact</a></li> -->
+                    <li style="float:right"><a href="register.html"><button class="button-17" role="button">Home</button></a>
+                    </li>
+                </ul>
+
+
+
+            </nav>
+        </header>
+    </div>
+    <div class="container-fluid">
+        <div class="row align-items-center" >
+            <div class="col-4 g-0" id="carousel-section">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/img1.jpg" class="d-block w-100" alt="..." width="250" height="650">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/img2.jpg" class="d-block w-100" alt="..." width="250" height="650">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/img3.png" class="d-block w-100" alt="..." width="250" height="650">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <div class="col">
+
+
+                <div class="row align-items-center">
+                    <div class="container w-50">
+                        <h1 class="h1">Sign in</h1>
+                        <div class="border-Register2">
+                        <form action="#" class="mt-5" id="sign-up">
+                            <div>
+                                
+                            </div>
+                            <div>
+                                <label for="email" class="form-label"><b>Email:</b></label>
+                                <input name="email" id="email" class="form-control mb-3" />
+                            </div>
+                            <small id="email-error" class="md-4"></small><br />
+
+                            <label for="pass" class="form-label"><b>Password:</b></label>
+                            <div class="input-group col-12">
+                                <input type="password" class="form-control" aria-describedby="button-addon2"
+                                    id="pass" />
+
+
+
+                                </button>
+                            </div>
+                            <small id="pass-error" class="md-4"> </small>
+                            <!-- <div class="mb-3">
+                                <span>The Password should be between 6-18 characters.</span>
+                            </div>-->
+                            <br /> 
+
+                            <div id="message"></div>
+                            <div class="d-grid gap-2">
+                                <input class="btn btn-primary sign-up btn-lg" id="signup" type="submit"  value="Log in"/>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <footer>CopyRight &copy; 3Val</footer>
+    <script>
+        const form = document.getElementById("sign-up");
+        const emailField = document.getElementById("email");
+
+        const passField = document.getElementById("pass");
+        form.addEventListener("submit", (e) => {
+            if (emailField.value == null || emailField.value == "") {
+                document.getElementById("email-error").textContent =
+                    "The email field is required.";
+            } else if (
+                !emailField.value.match(
+                    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                )
+            ) {
+                document.getElementById("email-error").textContent =
+                    "The email must be a valid email address.";
+                e.preventDefault();
+            } else {
+                document.getElementById("email-error").textContent = "";
+            }
+
+            if (passField.value == "" || passField.value == null) {
+                document.getElementById("pass-error").textContent =
+                    "The password field is required.";
+                e.preventDefault();
+            } else if (passField.value.length < 6) {
+                document.getElementById("pass-error").textContent =
+                    "The password must be at least 6 characters.";
+                e.preventDefault();
+            } else if (passField.value.length > 18) {
+                document.getElementById("pass-error").textContent =
+                    "The password may not be greater than 18 characters.";
+                e.preventDefault();
+            } else {
+                document.getElementById("pass-error").textContent = "";
+            }
+            let found = false;
+            let userIndex = null;
+            let formData = JSON.parse(localStorage.getItem("formData")) || [];
+            formData.forEach((element, arrayIndex) => {
+                if (element.email == emailField.value) {
+                    found = true;
+                    userIndex = arrayIndex;
+                }
+            });
+
+            if (found && formData[userIndex].password == passField.value) {
+                document.getElementById("message").innerHTML =
+                    "logged in successfuly ";
+                    window.open('evaluation.html', '_blank');
+                sessionStorage.email = formData[userIndex].email;
+                sessionStorage.pass = formData[userIndex].password;
+                sessionStorage.name = formData[userIndex].name;
+
+                e.preventDefault();
+            } else if (found && formData[userIndex].password !== passField.value) {
+                document.getElementById("message").innerHTML = "Wrong password";
+                e.preventDefault();
+            } else if (!found) {
+                document.getElementById("message").innerHTML = "account not found";
+                e.preventDefault();
+            } else {
+                document.getElementById("message").innerHTML = "";
+            }
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>

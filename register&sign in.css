@@ -1,0 +1,245 @@
+    .welcomePageBackground{
+        background-image: url(pages/images/back.JPG);
+        background-size: cover;
+        width: 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    .containerWelcome h1{
+        color: azure;
+      
+    }
+
+    img.welcome{
+        width: 100%;
+    }
+    .employeeSelection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .containerWelcome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(253, 253, 253, 0.4) ;
+        height: 700px;
+        transition: 2s;
+    }
+    .containerWelcome:hover{
+        scale: 1.03;
+       
+      }
+      .evaluationText{
+        font-size: medium;
+        font-weight: bold;
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      select.empolyeeName{
+        width:40%;
+        height: 30px;
+        text-align: center;
+        background-color:
+        #e99452;
+
+      }
+
+      /*register styling */
+      .sign-up {
+        background-color: black;
+        font-weight: bold;
+        
+    }
+    .h1{
+        text-align:center;
+    }
+    .nav-link{
+        font-weight: bold !important;
+        color: black !important;
+    }
+    .nav-link:hover {
+        color: #ff7900 !important;
+        
+    }
+    .hide {
+        width: 20px;
+        height: 20px;
+    }
+    #carouselExampleSlidesOnly {
+        width: 100%;
+    }
+    
+    .star {
+        color: red;
+    }
+    small{
+        font-weight: bold;
+        color: rgb(255, 116, 116);
+    }
+    .border-Register{
+        border: 1px solid black;
+        width: 100%;
+        padding: 30px;
+        background-color:#cfacb2;
+        border-radius: 20px;
+       
+        box-shadow: 3px 3px 3px 3px rgba(192, 192, 192, 0.589);
+    }
+    .border-Register2{
+        border: 1px solid black;
+        
+        padding: 30px;
+        background-color:#cfacb2;
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px 3px rgba(192, 192, 192, 0.589);
+        
+    }
+    .error{
+        color:red;
+    }
+    .Copyringht-3val{
+        background-color: #333;
+        text-align: center;
+        height: 50px;
+        color: white;
+        
+    }
+    /* CSS */
+    .button-17 {
+        align-items: center;
+        appearance: none;
+        background-color: #fff;
+        border-radius: 24px;
+        border-style: none;
+        box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+        box-sizing: border-box;
+        color: #3c4043;
+        cursor: pointer;
+        display: inline-flex;
+        fill: currentcolor;
+        font-family: "Google Sans", Roboto, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        height: 48px;
+        justify-content: center;
+        letter-spacing: .25px;
+        line-height: normal;
+        max-width: 100%;
+        overflow: visible;
+        padding: 2px 24px;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: auto;
+        will-change: transform, opacity;
+        z-index: 0;
+    }
+    
+    .button-17:hover {
+        background: #F6F9FE;
+        color: #174ea6;
+    }
+    
+    .button-17:active {
+        box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+        outline: none;
+    }
+    
+    .button-17:focus {
+        outline: none;
+        border: 2px solid #4285f4;
+    }
+    
+    .button-17:not(:disabled) {
+        box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+    }
+    
+    .button-17:not(:disabled):hover {
+        box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+    }
+    
+    .button-17:not(:disabled):focus {
+        box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+    }
+    
+    .button-17:not(:disabled):active {
+        box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+    }
+    
+    .button-17:disabled {
+        box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+    }
+    
+    .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .rightSideNav{
+        display: flex;
+        flex-direction: row;
+    }
+    .style3val{
+        font-size: xx-large;
+        font-family: 'Michroma', sans-serif;
+        font-weight: 700;
+     
+
+    }
+    
+    
+    li a {
+        display: block;
+        color: white;
+        font-size: x-large;
+        font-weight: 600;
+        text-align: center;
+        padding: 5px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: #111;
+    }
+   .register-section{
+    margin: 0 auto;
+
+   }
+   footer {
+    padding: 30px;
+    text-align: center;
+    background-color: #111;
+    color: wheat;
+} 
+
+
+
+
+
+
+   @media only screen and (max-width:450px) {
+    #carousel-section{
+        display: none;
+    }
+    .row.align-items-center{
+        height: 85vh;
+    }
+   }
