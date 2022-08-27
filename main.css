@@ -436,7 +436,7 @@
 
     #recommendArea {
         width: 40%;
-        height: 200px;
+        min-height: 200px;
         margin: auto;
         background-color: #dfe9fa;
         width: 80%;
