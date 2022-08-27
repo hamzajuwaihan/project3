@@ -262,22 +262,190 @@ selection.addEventListener('change', (event) => {
           his direct area of expertise.`;
 
 });
-// sessionStorage.name = formData[userIndex].name;
-// const changeName=document.getElementById( "employeeNameSelect");
-// function showYourName(){
-//   changeName.textContent=(`Welcome${sessionStorage.name}`)
-// }
 
 
-// window.addEventListener('load', () => {
-  
-// })
+let mySelect = document.getElementById('employeeNameSelect');
+mySelect.onchange = () => {
+    storage(mySelect.value);
+}
+function storage(empName) {
+    let emp1Arr = [];
+    // Q1 (Personal Critieria);
+
+    let pfe = document.getElementById('p-f-e');
+    let pfg = document.getElementById('p-f-g');
+    let pfp = document.getElementById('p-f-p');
+
+    pfe.onclick = () => {
+        emp1Arr[0] = `Excellent`;
+    }
+    pfg.onclick = () => {
+        emp1Arr[0] = `Good`
+
+    }
+    pfp.onclick = () => {
+        emp1Arr[0] = `Poor`
+    }
+
+    // Q2 (Personal Critieria);
+    let pse = document.getElementById('p-s-e');
+    let psg = document.getElementById('p-s-g');
+    let psp = document.getElementById('p-s-p');
 
 
+    pse.onclick = () => {
+        emp1Arr[1] = `Excellent`
+
+    }
+    psg.onclick = () => {
+        emp1Arr[1] = `Good`
+
+    }
+    psp.onclick = () => {
+        emp1Arr[1] = `Poor`
+
+    }
+
+    let pte = document.getElementById('p-t-e');
+    let ptg = document.getElementById('p-t-g');
+    let ptp = document.getElementById('p-t-p');
+
+    pte.onclick = () => {
+        emp1Arr[2] = `Excellent`
+
+
+    }
+    ptg.onclick = () => {
+        emp1Arr[2] = `Good`
+
+
+    }
+    ptp.onclick = () => {
+        emp1Arr[2] = `Poor`
+
+
+    }
+    // Q1 (Professional Critieria);
+
+    let profe = document.getElementById('pro-f-e');
+    let profg = document.getElementById('pro-f-g');
+    let profp = document.getElementById('pro-f-p');
+
+    profe.onclick = () => {
+        emp1Arr[3] = `Excellent`
+
+
+    }
+    profg.onclick = () => {
+        emp1Arr[3] = `Good`
+
+    }
+    profp.onclick = () => {
+        emp1Arr[3] = `Poor`
+
+    }
+    // Q2 (Professional Critieria);
+
+    let prose = document.getElementById('pro-s-e');
+    let prosg = document.getElementById('pro-s-g');
+    let prosp = document.getElementById('pro-s-p');
+
+    prose.onclick = () => {
+        emp1Arr[4] = `Excellent`
+
+    }
+    prosg.onclick = () => {
+        emp1Arr[4] = `Good`
+
+    }
+    prosp.onclick = () => {
+        emp1Arr[4] = `Poor`
+
+    }
+    // Q3 (Professional Critieria);
+
+    let prote = document.getElementById('pro-t-e');
+    let protg = document.getElementById('pro-t-g');
+    let protp = document.getElementById('pro-t-p');
+
+    prote.onclick = () => {
+        emp1Arr[5] = `Excellent`
+
+    }
+    protg.onclick = () => {
+        emp1Arr[5] = `Good`
+
+    }
+    protp.onclick = () => {
+        emp1Arr[5] = `Poor`
+
+    }
+
+    // Q1 (technicalSection Critieria);
+
+    let tfe = document.getElementById('t-f-e');
+    let tfg = document.getElementById('t-f-g');
+    let tfp = document.getElementById('t-f-p');
+
+    tfe.onclick = () => {
+        emp1Arr[6] = `Excellent`
+
+    }
+    tfg.onclick = () => {
+        emp1Arr[6] = `Good`
+
+
+    }
+    tfp.onclick = () => {
+        emp1Arr[6] = `Poor`
+
+    }
+
+    // Q2 (technicalSection Critieria);
+
+    let tse = document.getElementById('t-s-e');
+    let tsg = document.getElementById('t-s-g');
+    let tsp = document.getElementById('t-s-p');
+
+    tse.onclick = () => {
+        emp1Arr[7] = `Excellent`
+
+    }
+    tsg.onclick = () => {
+        emp1Arr[7] = `Good`
+
+    }
+    tsp.onclick = () => {
+        emp1Arr[7] = `Poor`
+
+    }
+
+    // Q3 (technicalSection Critieria);
+
+    let tte = document.getElementById('t-t-e');
+    let ttg = document.getElementById('t-t-g');
+    let ttp = document.getElementById('t-t-p');
+
+    tte.onclick = () => {
+        emp1Arr[8] = `Excellent`
+
+        localStorage.setItem(empName, JSON.stringify(emp1Arr));
+    }
+    ttg.onclick = () => {
+        emp1Arr[8] = `Good`
+
+        localStorage.setItem(empName, JSON.stringify(emp1Arr));
+    }
+    ttp.onclick = () => {
+        emp1Arr[8] = `Poor`
+
+        localStorage.setItem(empName, JSON.stringify(emp1Arr));
+    }
+}
 
 
   </script>
-  <script src="../script.js"></script>
+  
 
 
   </body>

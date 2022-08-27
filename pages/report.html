@@ -28,7 +28,7 @@
     <section class="welcomePageBackground2">
       <div class="containerWelcome2">
       <h2 >Please select an employee to show the evaluation result</h2>
-      <select name="" id="employeeNameSelect" class="empolyeeName">
+      <select name="" id="employeeNameSelect2" class="empolyeeName">
         <option value="the employee" >employee name</option>
         <option value="Hamza">Hamza</option>
         <option value="Majd">Majd</option>
@@ -52,9 +52,9 @@
             <h3 class="criteriaHeader">personal Critieria</h3>
             <ol>
               <li id="q-0">The employee personality and charisma is truly magnetic.</li>
-              <div class="radioBox">
+              <div class="radioBox" id="r0">
                 <input class="radioStyle" type="radio" name="personal-first" id="" />
-                <label for="">excellent</label>
+                <label for="" id="l0">excellent</label>
               </div>
               <!-- <div class="radioBox">
                 <input type="radio" name="personal-first" id="" />
@@ -66,9 +66,9 @@
               </div> -->
   
               <li id="q-1">The employee is a person of charisma and influence.</li>
-              <div class="radioBox">
+              <div class="radioBox" id="r1">
                 <input type="radio" name="personal-second" id="" />
-                <label for="">excellent</label>
+                <label for="" id="l1">excellent</label>
               </div>
               <!-- <div class="radioBox"> 
                 <input type="radio" name="personal-second" id="" />
@@ -82,9 +82,9 @@
                 The employee is a very soft spoken person and never lose his
                 temper.
               </li>
-              <div class="radioBox">
+              <div class="radioBox" id="r2">
                 <input type="radio" name="personal-third" id="" />
-                <label for="">excellent</label>
+                <label for="" id="l2">excellent</label>
               </div>
               <!-- <div class="radioBox">
                 <input type="radio" name="personal-third" id="" />
@@ -103,9 +103,9 @@
             <h3 class="criteriaHeader">professional Critieria</h3>
             <ol>
               <li id="q-3">The employee’s dress and personal appearance</li>
-              <div class="radioBox">
+              <div class="radioBox" id="r3">
                 <input type="radio" name="professional-first" id="" />
-                <label for="">excellent</label>
+                <label for="" id="l3">excellent</label>
               </div>
               <!-- <div class="radioBox">
                 <input type="radio" name="professional-first" id="" />
@@ -117,9 +117,9 @@
               </div> -->
   
               <li id="q-4">the employee is accountable for her tasks</li>
-              <div class="radioBox">
+              <div class="radioBox" id="r4">
                 <input type="radio" name="professional-second" id="" />
-                <label for="">excellent</label>
+                <label for="" id="l4">excellent</label>
               </div>
               <!-- <div class="radioBox">
                 <input type="radio" name="professional-second" id="" />
@@ -132,9 +132,9 @@
               <li id="q-5">
                 The employee’s behavior according to the company’s ethical code.
               </li>
-              <div class="radioBox">
+              <div class="radioBox" id="r5">
                 <input type="radio" name="professional-third" id="" />
-                <label for="">excellent</label>
+                <label for="" id="l5">excellent</label>
               </div>
               <!-- <div class="radioBox">
                 <input type="radio" name="professional-third" id="" />
@@ -156,9 +156,9 @@
                 the most complex design and implementation issues at every stage
                 of development.
               </li>
-              <div class="radioBox">
+              <div class="radioBox" id="r6">
                 <input type="radio" name="professional-first" id="" />
-                <label for="">excellent</label>
+                <label for="" id="l6">excellent</label>
               </div>
               <!-- <div class="radioBox">
                 <input type="radio" name="professional-first" id="" />
@@ -173,9 +173,9 @@
                 the employee has an exceptional way of finding things and get them
                 improved.
               </li>
-              <div class="radioBox">
+              <div class="radioBox" id="r7"> 
                 <input type="radio" name="professional-second" id="" />
-                <label for="">excellent</label>
+                <label for="" id="l7">excellent</label>
               </div>
               <!-- <div class="radioBox">
                 <input type="radio" name="professional-second" id="" />
@@ -189,9 +189,9 @@
                 the employee understands complicated issues, even when outside of
                 his direct area of expertise.
               </li>
-              <div class="radioBox">
+              <div class="radioBox" id="r8">
                 <input type="radio" name="professional-third" id="" />
-                <label for="">excellent</label>
+                <label for="" id="l8">excellent</label>
               </div>
               
               <!-- <div class="radioBox">
@@ -211,14 +211,14 @@
     </section>
     <section class="containerRecomend" >
         <div class="recImgAndText"><h2>Recommendations</h2><img src="images/recommendation-icon.JPG"></div>
-        <p>we advice you with the following based on your evaluation so you keep your company as its best!!</p>
-        <div class="recommendArea">
+        <p id="reco">we advice you with the following based on your evaluation so you keep your company as its best!!</p>
+        <div id="recommendArea">
 
         </div>
     </section>
     <footer>CopyRight 3Val</footer>
     <script>
-      const selection=document.getElementById("employeeNameSelect")
+      const selection=document.getElementById("employeeNameSelect2")
       selection.addEventListener('change', (event) => {
   
   document.getElementById("q-0").textContent =`${event.target.value} personality and charisma is truly magnetic.`;
@@ -234,9 +234,100 @@
           improved.`;
   document.getElementById("q-8").textContent =`${event.target.value} understands complicated issues, even when outside of
           his direct area of expertise.`;
+          myAnswers =  JSON.parse(localStorage.getItem(myEmp));
 
 });
+let r0 = document.getElementById('r0')
+let r1 = document.getElementById('r1')
+let r2 = document.getElementById('r2')
+let r3 = document.getElementById('r3')
+let r4 = document.getElementById('r4')
+let r5 = document.getElementById('r5')
+let r6 = document.getElementById('r6')
+let r7 = document.getElementById('r7')
+let r8 = document.getElementById('r8')
 
+let l0 = document.getElementById('l0')
+let l1 = document.getElementById('l1')
+let l2 = document.getElementById('l2')
+let l3 = document.getElementById('l3')
+let l4 = document.getElementById('l4')
+let l5 = document.getElementById('l5')
+let l6 = document.getElementById('l6')
+let l7 = document.getElementById('l7')
+let l8 = document.getElementById('l8')
+
+
+let reco = document.getElementById("recommendArea")
+
+
+let re = 0;
+
+let mySelect2 = document.getElementById('employeeNameSelect2')
+let myEmp;
+let myAnswers;
+mySelect2.onchange = () =>{
+    myEmp = mySelect2.value;
+    myAnswers =  JSON.parse(localStorage.getItem(myEmp));
+    let recommendations = '';
+
+    for(let i =0 ; i<9 ; i++){
+        document.getElementById(`l${i}`).textContent = myAnswers[i];
+        console.log(document.getElementById(`l${i}`).textContent)
+        if(document.getElementById(`l${i}`).textContent === 'Excellent'){
+            document.getElementById(`r${i}`).style.borderColor = 'green'
+        }else if(document.getElementById(`l${i}`).textContent === 'Good'){
+            document.getElementById(`r${i}`).style.borderColor = 'yellow'
+        }else{
+            document.getElementById(`r${i}`).style.borderColor = 'red'
+        }
+    }
+    
+    if((l0.textContent === 'Poor')){
+        re = 1;
+        recommendations += '<br>more charisma';
+    }
+    if((l1.textContent === 'Poor')){
+        re = 1;
+        recommendations += '<br>more influence';
+    }
+    if((l2.textContent === 'Poor')){
+        re = 1;
+        recommendations += '<br>control temper';
+    }
+    if((l3.textContent === 'Poor') ){
+        re = 1;
+        recommendations += '<br>work on appearance';
+    }
+    if((l4.textContent === 'Poor') ){
+        re = 1;
+        recommendations += '<br>must be accountable';
+    }
+    if((l5.textContent === 'Poor') ){
+        re = 1;
+        recommendations += '<br>must respect ethical code';
+    }
+    if((l6.textContent === 'Poor') ){
+        re = 1;
+        recommendations += '<br>more understanding of the most complex design';
+    }
+    if((l7.textContent === 'Poor') ){
+        re = 1;
+        recommendations += '<br>must be creative';
+    }
+    if((l8.textContent === 'Poor') ){
+        re = 1;
+        recommendations += '<br>must think out of the box';
+    }
+
+
+    if(re === 1){
+        reco.innerHTML = `we advice you with the following based on your evaluation so you keep your company as its best!!${recommendations}`
+        
+    }else{
+        reco.innerHTML = `not need Recommendations!!`
+    }
+}
     </script>
   </body>
 </html>
