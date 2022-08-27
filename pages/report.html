@@ -38,14 +38,14 @@
       <img class="welcome2"  src="images/reportphoto.png">
 
 
-      <button class="button-55">show the evaluation</button>
+      <button class="button-55" id="start">show the evaluation</button>
 
  
       </div>
 
     </section>
   </section>
-      <section class="employeeFormEval" >
+      <section class="employeeFormEval "id="fir" >
         <h2>Employee Evaluation Results</h2>
         <form action="" class="evaluationForm" >
           <div class="personal-section">
@@ -209,7 +209,7 @@
         
       </form>
     </section>
-    <section class="containerRecomend" >
+    <section class="containerRecomend" id="recomendationSystem" >
         <div class="recImgAndText"><h2>Recommendations</h2><img src="images/recommendation-icon.JPG"></div>
         <p id="reco">we advice you with the following based on your evaluation so you keep your company as its best!!</p>
         <div id="recommendArea">
@@ -218,6 +218,19 @@
     </section>
     <footer>CopyRight 3Val</footer>
     <script>
+
+document.getElementById("start").addEventListener("click",(e)=>{
+      document.getElementById("fir").style.display="flex";
+   document.getElementById("recomendationSystem").style.display="flex"
+   
+    })
+
+   
+
+ 
+
+
+
       const selection=document.getElementById("employeeNameSelect2")
       selection.addEventListener('change', (event) => {
   

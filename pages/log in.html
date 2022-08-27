@@ -147,11 +147,11 @@
             if (found && formData[userIndex].password == passField.value) {
                 document.getElementById("message").innerHTML =
                     "logged in successfuly ";
-                    window.open('evaluation.html', '_blank');
+                  
                 sessionStorage.email = formData[userIndex].email;
                 sessionStorage.pass = formData[userIndex].password;
                 sessionStorage.name = formData[userIndex].name;
-
+  window.open('evaluation.html', '_blank');
                 e.preventDefault();
             } else if (found && formData[userIndex].password !== passField.value) {
                 document.getElementById("message").innerHTML = "Wrong password";

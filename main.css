@@ -2,7 +2,9 @@
         margin: 0;
     }
 
- 
+ #fir{
+    display: none;
+ }
 
     /* CSS */
     .button-17 {
@@ -448,7 +450,7 @@
  
 
     .containerRecomend{
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;

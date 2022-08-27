@@ -28,7 +28,7 @@
     </header>
 <section class="welcomePageBackground">
     <div class="containerWelcome">
-      <h1 id="welcomeMessage" onload="showYourName()"> Welcome username</h1> 
+      <h1 id="welcomeMessage" > Welcome username</h1> 
      
     
     <section class="employeeSelection">
@@ -47,7 +47,7 @@
       </select>
 
       <img class="welcome"  src="images/welome.png">
-      <button class="evaluationBtn button-55">start the evaluation</button>
+      <button class="evaluationBtn button-55" id="start">start the evaluation</button>
 </div>
     </section>
 </section>
@@ -223,7 +223,12 @@
 
 
     <script>
-      /* TODO this is for you to complete */
+    document.getElementById("welcomeMessage").innerHTML= `Welcome ${sessionStorage.name}`
+    document.getElementById("start").addEventListener("click",(e)=>{
+      document.getElementById("fir").style.display="flex";
+    })
+
+
       const p1Text = document.getElementById("p1_text");
       const p2Text = document.getElementById("p2_text");
       const p3Text = document.getElementById("p3_text");
