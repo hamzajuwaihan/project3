@@ -96,7 +96,7 @@
                         <div>
 
                         <label for="phone" class="form-label"><b>Phone:</b></label>
-                        <input type="tel" name="phone" id="phone" class="form-control mb-3 py-2" />
+                        <input type="number" name="phone" id="phone" class="form-control mb-3 py-2" />
                         <small id="tel-error" class="md-4"></small><br /><br></div>
                         <label for="pass" class="form-label"><b>Password:</b></label>
                         <div class="input-group col-12">
@@ -156,7 +156,7 @@ form.addEventListener("submit", (e) => {
     } else {
         document.getElementById("email-error").textContent = "";
     }
-    if (phoneField.value == "" || phoneField.value == null) {
+    if (phoneField.value == "" || phoneField.value == null ) {
         document.getElementById("tel-error").textContent =
             "The Mobile field is required.";
         e.preventDefault();

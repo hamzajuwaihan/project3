@@ -266,7 +266,7 @@
 
     .employeeFormEval {
         margin-top: 1%;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -454,7 +454,7 @@
 
     #recommendArea {
         width: 40%;
-        min-height: 200px;
+        min-height: 5px;
         margin: auto;
         background-color: #dfe9fa;
         width: 80%;
@@ -462,6 +462,7 @@
         margin-bottom: 1%;
         color: #111;
         font-family: 'DynaPuff', cursive;
+        padding: 20px;
     }
 
 
