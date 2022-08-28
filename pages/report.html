@@ -28,7 +28,7 @@
     <section class="welcomePageBackground2">
       <div class="containerWelcome2">
       <h2 >Please select an employee to show the evaluation result</h2>
-      <select name="" id="employeeNameSelect2" class="empolyeeName">
+      <select name="" id="employeeNameSelect2" class="empolyeeName" onchange="changeSelectForReport()">
         <option value="the employee" >employee name</option>
         <option value="Hamza">Hamza</option>
         <option value="Majd">Majd</option>
@@ -38,14 +38,14 @@
       <img class="welcome2"  src="images/reportphoto.png">
 
 
-      <button class="button-55" id="start">show the evaluation</button>
+      <button class="button-55" id="reportstart" onclick="showResult()">show the evaluation</button>
 
  
       </div>
 
     </section>
   </section>
-      <section class="employeeFormEval "id="fir" >
+      <section class="employeeFormEval"id="reportfir" >
         <h2>Employee Evaluation Results</h2>
         <form action="" class="evaluationForm" >
           <div class="personal-section">
@@ -53,49 +53,27 @@
             <ol>
               <li id="q-0">The employee personality and charisma is truly magnetic.</li>
               <div class="radioBox" id="r0">
-                <input class="radioStyle" type="radio" name="personal-first" id="" />
+             
                 <label for="" id="l0">excellent</label>
               </div>
-              <!-- <div class="radioBox">
-                <input type="radio" name="personal-first" id="" />
-                <label for="">good</label>
-              </div>
-              <div class="radioBox">
-                <input type="radio" name="personal-first" id="" />
-                <label for="">poor</label>
-              </div> -->
+
   
               <li id="q-1">The employee is a person of charisma and influence.</li>
               <div class="radioBox" id="r1">
-                <input type="radio" name="personal-second" id="" />
+                
                 <label for="" id="l1">excellent</label>
               </div>
-              <!-- <div class="radioBox"> 
-                <input type="radio" name="personal-second" id="" />
-                <label for="">good</label>
-              </div>
-              <div class="radioBox">
-                <input type="radio" name="personal-second" id="" />
-                <label for="">poor</label>
-              </div> -->
+              
               <li id="q-2">
                 The employee is a very soft spoken person and never lose his
                 temper.
               </li>
               <div class="radioBox" id="r2">
-                <input type="radio" name="personal-third" id="" />
                 <label for="" id="l2">excellent</label>
               </div>
-              <!-- <div class="radioBox">
-                <input type="radio" name="personal-third" id="" />
-                <label for="">good</label>
-              </div>
-              <div class="radioBox">
-                <input type="radio" name="personal-third" id="" />
-                <label for="">poor</label>
-              </div> -->
+
             </ol>
-            <!-- <input class="submitEvaluationForm2" type="submit" value="Recommendations" /> -->  
+            
           
           </div>
        
@@ -104,46 +82,24 @@
             <ol>
               <li id="q-3">The employee’s dress and personal appearance</li>
               <div class="radioBox" id="r3">
-                <input type="radio" name="professional-first" id="" />
+               
                 <label for="" id="l3">excellent</label>
               </div>
-              <!-- <div class="radioBox">
-                <input type="radio" name="professional-first" id="" />
-                <label for="">good</label>
-              </div>
-              <div class="radioBox">
-                <input type="radio" name="professional-first" id="" />
-                <label for="">poor</label>
-              </div> -->
+             
   
               <li id="q-4">the employee is accountable for her tasks</li>
               <div class="radioBox" id="r4">
-                <input type="radio" name="professional-second" id="" />
+               
                 <label for="" id="l4">excellent</label>
               </div>
-              <!-- <div class="radioBox">
-                <input type="radio" name="professional-second" id="" />
-                <label for="">good</label>
-              </div>
-              <div class="radioBox">
-                <input type="radio" name="professional-second" id="" />
-                <label for="">poor</label>
-              </div> -->
+
               <li id="q-5">
                 The employee’s behavior according to the company’s ethical code.
               </li>
               <div class="radioBox" id="r5">
-                <input type="radio" name="professional-third" id="" />
+               
                 <label for="" id="l5">excellent</label>
               </div>
-              <!-- <div class="radioBox">
-                <input type="radio" name="professional-third" id="" />
-                <label for="">good</label>
-              </div>
-              <div class="radioBox">
-                <input type="radio" name="professional-third" id="" />
-                <label for="">poor</label>
-              </div> -->
             </ol>
          
           </div>
@@ -157,51 +113,29 @@
                 of development.
               </li>
               <div class="radioBox" id="r6">
-                <input type="radio" name="professional-first" id="" />
                 <label for="" id="l6">excellent</label>
               </div>
-              <!-- <div class="radioBox">
-                <input type="radio" name="professional-first" id="" />
-                <label for="">good</label>
-              </div>
-              <div class="radioBox">
-                <input type="radio" name="professional-first" id="" />
-                <label for="">poor</label>
-              </div> -->
+
   
               <li id="q-7">
                 the employee has an exceptional way of finding things and get them
                 improved.
               </li>
               <div class="radioBox" id="r7"> 
-                <input type="radio" name="professional-second" id="" />
+                
                 <label for="" id="l7">excellent</label>
               </div>
-              <!-- <div class="radioBox">
-                <input type="radio" name="professional-second" id="" />
-                <label for="">good</label>
-              </div>
-              <div class="radioBox">
-                <input type="radio" name="professional-second" id="" />
-                <label for="">poor</label>
-              </div> -->
+
               <li id="q-8">
                 the employee understands complicated issues, even when outside of
                 his direct area of expertise.
               </li>
               <div class="radioBox" id="r8">
-                <input type="radio" name="professional-third" id="" />
+               
                 <label for="" id="l8">excellent</label>
               </div>
               
-              <!-- <div class="radioBox">
-                <input type="radio" name="professional-third" id="" />
-                <label for="">good</label>
-              </div> -->
-              <!-- <div class="radioBox">
-                <input type="radio" name="professional-third" id="" />
-                <label for="">poor</label>
-              </div> -->
+
             </ol>   
           
           </div>
