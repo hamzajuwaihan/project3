@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="../main.css" />
   </head>
-  <body>
+  <body onload="welcomeMessageUser()">
     <header>
       <nav>
         <ul class="navbar">
@@ -40,7 +40,7 @@
         sections to evaluate your employee <br>(personal, professional, technical)
         and then we will <br>recommend you advices based on your answers.
       </p>
-      <select name="" id="employeeNameSelect" class="empolyeeName">
+      <select name="" id="employeeNameSelect" class="empolyeeName" onchange="selectEmployeeToEval()">
         <option value="the employee" >Employee Name</option>
         <option value="Hamza">Hamza</option>
         <option value="Majd">Majd</option>
@@ -49,12 +49,12 @@
       </select>
 
       <img class="welcome"  src="images/welome.png">
-      <button class="evaluationBtn button-55" id="evalstart">start the evaluation</button>
+      <button class="evaluationBtn button-55" id="evalstart" onclick="showEvalSections()">start the evaluation</button>
 </div>
     </section>
 </section>
 
-<section class="employeeFormEval" id="evalfir">
+<section class="employeeFormEval" id="evalfir" >
   <h2>Employee Evaluation </h2>
   <form action="" class="evaluationForm" >
     <div class="personal-section">
@@ -224,231 +224,31 @@
     <footer>CopyRight &copy; 3Val</footer>
 
 
-    <script >
-      document.getElementById("welcomeMessage").innerHTML = `Welcome ${sessionStorage.name}`
-document.getElementById("evalstart").addEventListener("click", (e) => {
-    document.getElementById("evalfir").style.display = "flex";
-})
+    <script src="../script.js">
+      
+      
 
 
-const p1Text = document.getElementById("p1_text");
-const p2Text = document.getElementById("p2_text");
-const p3Text = document.getElementById("p3_text");
+
+
+
+
 const selection = document.getElementById("employeeNameSelect");
 
 
 
-function showOne() {
-    p1Text.style.display = 'block';
-}
 
-function showTwo() {
-    p2Text.style.display = 'block';
-}
-
-function showThree() {
-    p3Text.style.display = 'block';
-}
 
 
 
 selection.addEventListener('change', (event) => {
 
-    document.getElementById("q-0").textContent = `${event.target.value} personality and charisma is truly magnetic.`;
-    document.getElementById("q-1").textContent = `${event.target.value} is a person of charisma and influence.`;
-    document.getElementById("q-2").textContent = `${event.target.value} is a very soft spoken person and never lose his temper.`;
-    document.getElementById("q-3").textContent = `${event.target.value} dress and personal appearance.`;
-    document.getElementById("q-4").textContent = `${event.target.value} is accountable for her tasks.`;
-    document.getElementById("q-5").textContent = `${event.target.value} behavior according to the company’s ethical code.`;
-    document.getElementById("q-6").textContent = `${event.target.value}  the employee demonstrated the highest level of understanding of
-      the most complex design and implementation issues at every stage
-      of development.`;
-    document.getElementById("q-7").textContent = `${event.target.value} has an exceptional way of finding things and get them
-      improved.`;
-    document.getElementById("q-8").textContent = `${event.target.value} understands complicated issues, even when outside of
-      his direct area of expertise.`;
 
 });
 
 
-let mySelect = document.getElementById('employeeNameSelect');
-mySelect.onchange = () => {
-    storage(mySelect.value);
-}
-function storage(empName) {
-    let emp1Arr = [];
-    // Q1 (Personal Critieria);
-
-    let pfe = document.getElementById('p-f-e');
-    let pfg = document.getElementById('p-f-g');
-    let pfp = document.getElementById('p-f-p');
-
-    pfe.onclick = () => {
-        emp1Arr[0] = `Excellent`;
-    }
-    pfg.onclick = () => {
-        emp1Arr[0] = `Good`
-
-    }
-    pfp.onclick = () => {
-        emp1Arr[0] = `Poor`
-    }
-
-    // Q2 (Personal Critieria);
-    let pse = document.getElementById('p-s-e');
-    let psg = document.getElementById('p-s-g');
-    let psp = document.getElementById('p-s-p');
 
 
-    pse.onclick = () => {
-        emp1Arr[1] = `Excellent`
-
-    }
-    psg.onclick = () => {
-        emp1Arr[1] = `Good`
-
-    }
-    psp.onclick = () => {
-        emp1Arr[1] = `Poor`
-
-    }
-
-    let pte = document.getElementById('p-t-e');
-    let ptg = document.getElementById('p-t-g');
-    let ptp = document.getElementById('p-t-p');
-
-    pte.onclick = () => {
-        emp1Arr[2] = `Excellent`
-
-
-    }
-    ptg.onclick = () => {
-        emp1Arr[2] = `Good`
-
-
-    }
-    ptp.onclick = () => {
-        emp1Arr[2] = `Poor`
-
-
-    }
-    // Q1 (Professional Critieria);
-
-    let profe = document.getElementById('pro-f-e');
-    let profg = document.getElementById('pro-f-g');
-    let profp = document.getElementById('pro-f-p');
-
-    profe.onclick = () => {
-        emp1Arr[3] = `Excellent`
-
-
-    }
-    profg.onclick = () => {
-        emp1Arr[3] = `Good`
-
-    }
-    profp.onclick = () => {
-        emp1Arr[3] = `Poor`
-
-    }
-    // Q2 (Professional Critieria);
-
-    let prose = document.getElementById('pro-s-e');
-    let prosg = document.getElementById('pro-s-g');
-    let prosp = document.getElementById('pro-s-p');
-
-    prose.onclick = () => {
-        emp1Arr[4] = `Excellent`
-
-    }
-    prosg.onclick = () => {
-        emp1Arr[4] = `Good`
-
-    }
-    prosp.onclick = () => {
-        emp1Arr[4] = `Poor`
-
-    }
-    // Q3 (Professional Critieria);
-
-    let prote = document.getElementById('pro-t-e');
-    let protg = document.getElementById('pro-t-g');
-    let protp = document.getElementById('pro-t-p');
-
-    prote.onclick = () => {
-        emp1Arr[5] = `Excellent`
-
-    }
-    protg.onclick = () => {
-        emp1Arr[5] = `Good`
-
-    }
-    protp.onclick = () => {
-        emp1Arr[5] = `Poor`
-
-    }
-
-    // Q1 (technicalSection Critieria);
-
-    let tfe = document.getElementById('t-f-e');
-    let tfg = document.getElementById('t-f-g');
-    let tfp = document.getElementById('t-f-p');
-
-    tfe.onclick = () => {
-        emp1Arr[6] = `Excellent`
-
-    }
-    tfg.onclick = () => {
-        emp1Arr[6] = `Good`
-
-
-    }
-    tfp.onclick = () => {
-        emp1Arr[6] = `Poor`
-
-    }
-
-    // Q2 (technicalSection Critieria);
-
-    let tse = document.getElementById('t-s-e');
-    let tsg = document.getElementById('t-s-g');
-    let tsp = document.getElementById('t-s-p');
-
-    tse.onclick = () => {
-        emp1Arr[7] = `Excellent`
-
-    }
-    tsg.onclick = () => {
-        emp1Arr[7] = `Good`
-
-    }
-    tsp.onclick = () => {
-        emp1Arr[7] = `Poor`
-
-    }
-
-    // Q3 (technicalSection Critieria);
-
-    let tte = document.getElementById('t-t-e');
-    let ttg = document.getElementById('t-t-g');
-    let ttp = document.getElementById('t-t-p');
-
-    tte.onclick = () => {
-        emp1Arr[8] = `Excellent`
-
-        localStorage.setItem(empName, JSON.stringify(emp1Arr));
-    }
-    ttg.onclick = () => {
-        emp1Arr[8] = `Good`
-
-        localStorage.setItem(empName, JSON.stringify(emp1Arr));
-    }
-    ttp.onclick = () => {
-        emp1Arr[8] = `Poor`
-
-        localStorage.setItem(empName, JSON.stringify(emp1Arr));
-    }
-}
     </script>
   
 

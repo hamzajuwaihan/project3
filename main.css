@@ -3,9 +3,9 @@
     }
 
 
- #fir{
-    display: none;
- }
+    #fir {
+        display: none;
+    }
 
 
     /* CSS */
@@ -125,7 +125,7 @@
         background-image: url(pages/images/back.JPG);
         background-size: cover;
         width: 100%;
-        height: 800px;
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -141,7 +141,7 @@
         align-content: space-around;
         flex-direction: column;
         background-color: rgba(253, 253, 253, 0.4);
-        height: 780px;
+        
         transition: 2s;
         width: 45%;
 
@@ -273,7 +273,7 @@
         align-items: center;
         font-size: larger;
         color: black;
-        
+
     }
 
 
@@ -385,7 +385,7 @@
         accent-color: #81ff81;
     }
 
-    
+
 
 
 
@@ -407,6 +407,7 @@
 
     .containerWelcome2 {
         display: flex;
+        padding: 15px;
         justify-content: center;
         align-items: center;
         align-content: space-around;
@@ -414,7 +415,7 @@
         background-color: rgba(253, 253, 253, 0.4);
         height: 650px;
         transition: 2s;
-        width: 45%;
+        
 
     }
 
@@ -453,7 +454,7 @@
     }
 
     #recommendArea {
-        width: 40%;
+        
         min-height: 5px;
         margin: auto;
         background-color: #dfe9fa;
@@ -466,9 +467,9 @@
     }
 
 
-    .containerRecomend{
+    .containerRecomend {
         display: none;
-
+        margin: 0 auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -476,8 +477,8 @@
         border: 3px black solid;
         margin-bottom: 5%;
         margin-top: 5%;
-        margin-left: 25%;
-        width: 50%;
+        padding: 20px;
+        width: 80%;
         font-family: 'DynaPuff', cursive;
     }
 
@@ -537,7 +538,7 @@
 
 
 
-        
+
 
         .containerRecomend {
             display: flex;
@@ -548,26 +549,27 @@
             border: 3px black solid;
             margin-bottom: 5%;
             margin-top: 5%;
-            margin-left: 0%;
-            width: 95%;
+            
+            
             font-family: 'DynaPuff', cursive;
         }
+
         #carousel-section {
             display: none;
         }
-    
+
         .row.align-items-center {
             height: 85vh;
         }
-    
-    
 
-        .border-Register2{
+
+
+        .border-Register2 {
             width: 170%;
             margin-left: -35%;
-        
+
         }
-      
+
     }
 
     @media screen and (min-width:551px) and (max-width: 920px) {
@@ -588,46 +590,47 @@
             margin: 5% 0%;
         }
 
-        .border-Register2{
+        .border-Register2 {
             width: 160%;
             margin-left: -35%;
-        
-        } 
+
+        }
 
     }
 
 
-    @media(max-width:750px){
+    @media(max-width:750px) {
         #loginReg {
             width: 80%;
-            
+
         }
-    
+
         #signUp {
             width: 80%;
-        } 
-    
+        }
+
     }
-    
-     @media(max-width:440px){
+
+    @media(max-width:440px) {
         #loginReg {
             width: 80%;
-            
+
         }
-    
+
         #signUp {
             width: 80%;
-        } 
+        }
+
         .border-Register {
             border: 1px solid black;
             min-width: 80%;
-            min-height: 510px; 
+            min-height: 510px;
             padding: 30px;
             background-color: #cfacb2;
             border-radius: 20px;
             box-shadow: 3px 3px 3px 3px rgba(192, 192, 192, 0.589);
         }
-    
+
     }
 
 
@@ -681,7 +684,7 @@
         box-shadow: 3px 3px 3px 3px rgba(192, 192, 192, 0.589);
     }
 
-    .border-Register div{
+    .border-Register div {
         margin-bottom: -8%;
     }
 
@@ -694,7 +697,8 @@
         box-shadow: 3px 3px 3px 3px rgba(192, 192, 192, 0.589);
 
     }
-    .border-Register2 div{
+
+    .border-Register2 div {
         margin-bottom: -4%;
     }
 
@@ -785,11 +789,23 @@
 
     }
 
- /* evaluation form > the three sections inside it */
- .evaluationForm{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- }
+    /* evaluation form > the three sections inside it */
+    .evaluationForm {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .greentext{
+        color: green;
+        font-weight: bold;
+    }
+    .redtext{
+        color:red;
+        font-weight: bold;
+    }
+    .yellowtext{
+        color:#E4D00A;
+        font-weight: bold;
+    }
