@@ -3,6 +3,10 @@
     }
 
 
+ #fir{
+    display: none;
+ }
+
 
     /* CSS */
     .button-17 {
@@ -461,8 +465,9 @@
     }
 
 
-    .containerRecomend {
-        display: flex;
+    .containerRecomend{
+        display: none;
+
         flex-direction: column;
         justify-content: center;
         align-items: center;
