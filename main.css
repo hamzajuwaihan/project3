@@ -684,9 +684,9 @@
         box-shadow: 3px 3px 3px 3px rgba(192, 192, 192, 0.589);
     }
 
-    .border-Register div {
+    /* .border-Register div {
         margin-bottom: -8%;
-    }
+    } */
 
     .border-Register2 {
         border: 1px solid black;
@@ -698,9 +698,9 @@
 
     }
 
-    .border-Register2 div {
+    /* .border-Register2 div {
         margin-bottom: -4%;
-    }
+    } */
 
     .error {
         color: red;
