@@ -471,7 +471,9 @@ function loginfunction() {
         sessionStorage.pass = formData[userIndex].password;
         sessionStorage.name = formData[userIndex].name;
 
-        
+        window.open('evaluation.html', '_blank');
+
+       
 
         return false;
     } else if (found && formData[userIndex].password !== loginpassField.value) {
